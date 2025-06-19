@@ -1,12 +1,12 @@
 const projects = [
   {
-    title: "Mi Portfolio",
-    description: "Portfolio hecho en React y Tailwind CSS.",
+    title: "WauMatch",
+    description: "Proyecto que une personas para el cuidado de animales",
     link: "https://tulink.vercel.app",
   },
   {
-    title: "Proyecto Python",
-    description: "App de análisis de datos con Streamlit.",
+    title: "Proyecto TFGPoke",
+    description: "Pequeño juego Pokemon hecho en SpringBoot utilizando Java , JavaScript , Css y MySQL",
     link: "https://github.com/tuusuario/proyecto-python",
   },
 ];
