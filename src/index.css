@@ -3,6 +3,66 @@
 @tailwind utilities;
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
+
 body {
   font-family: 'Space Grotesk', sans-serif;
+}
+
+.border-animator {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 0.75rem; /* coincide con rounded-xl */
+  pointer-events: none;
+}
+
+.border-animator::before {
+  content: "";
+  position: absolute;
+  width: 2px; /* Tamaño del punto */
+  height: 2px; /* Tamaño del punto */
+  background: #f472b6; /* Color rosa del punto */
+  border-radius: 50%; /* Hace que sea un círculo */
+  animation: border-dot 4s linear infinite;
+  box-shadow: 0 0 4px #f472b6, 0 0 8px #f472b6, 0 0 12px rgba(244, 114, 182, 0.5); /* Estela suave */
+  z-index: 20;
+  transform-origin: center;
+}
+
+/* Animación que mueve el punto alrededor del borde */
+@keyframes border-dot {
+  0% {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+  25% {
+    top: 0;
+    left: calc(100% - 2px);
+    transform: translate(-100%, 0);
+  }
+  50% {
+    top: calc(100% - 2px);
+    left: calc(100% - 2px);
+    transform: translate(-100%, -100%);
+  }
+  75% {
+    top: calc(100% - 2px);
+    left: 0;
+    transform: translate(0, -100%);
+  }
+  100% {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+}
+
+/* Mostrar la animación solo al hover */
+.group:hover .border-animator::before {
+  opacity: 1;
+}
+
+.border-animator::before {
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
