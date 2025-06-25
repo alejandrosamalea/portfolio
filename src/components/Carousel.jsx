@@ -43,7 +43,7 @@ const Carousel = () => {
 
   return (
     <div className="w-full max-w-4xl mx-auto overflow-hidden relative">
-      <div className="h-80">
+      <div className="h-80 cursor-grab active:cursor-grabbing">
         <Slider {...settings} ref={sliderRef}>
 <div className="bg-black text-white px-6 [@media(min-width:681px)]:pl-16 [@media(min-width:681px)]:pr-8 flex flex-col [@media(min-width:681px)]:flex-row items-start [@media(min-width:681px)]:items-center justify-center gap-4 relative overflow-hidden h-auto [@media(min-width:681px)]:h-80 py-6 [@media(min-width:681px)]:py-0">
   {/* Contenido textual */}
