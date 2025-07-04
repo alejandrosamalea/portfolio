@@ -6,21 +6,22 @@
 
 /* Estilo base para los enlaces en la navbar */
 .navbar-links a {
-  color: white; /* Texto blanco por defecto */
-  font-weight: 600; /* Font bold */
-  text-decoration: none; /* Eliminar subrayado */
-  transition: color 0.3s ease; /* Transición suave para el cambio de color */
+  color:  #f472b6; 
+  font-weight: 600; 
+  text-decoration: none; 
+  transition: color 0.3s ease; 
 }
 
-/* Efecto hover: Cambia color a rosa */
+
 .navbar-links a:hover {
-  color: #f472b6; /* Rosa de Tailwind */
+  color: white; 
 }
+/******************************************************/
 
 body {
   font-family: 'Space Grotesk', sans-serif;
 }
-
+/* Estilos para las cajas con los hovers*/
 .border-animator {
   position: absolute;
   inset: 0;
@@ -28,17 +29,18 @@ body {
   pointer-events: none;
   border: 2px solid transparent;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  z-index: 0; /* Cambiado de 10 a 0 */
+  z-index: 0; 
 }
 
 .group:hover .border-animator,
 .group:focus-within .border-animator {
-  border-color: #f472b6; /* rosa base */
+  border-color: #f472b6; 
   box-shadow:
     0 0 6px #f472b6,
-    0 0 12px #fb9dc9,       /* rosa más claro */
+    0 0 12px #fb9dc9,       
     0 0 24px #f472b6,
     0 0 36px #fb9dc9,
-    0 0 48px rgba(255, 182, 210, 0.6),  /* muy claro, casi blanco */
-    0 0 64px rgba(255, 192, 222, 0.4);  /* halo suave */
+    0 0 48px rgba(255, 182, 210, 0.6),  
+    0 0 64px rgba(255, 192, 222, 0.4);  
 }
+ /**********************************************************/   

@@ -13,7 +13,7 @@ const Carousel = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 5000,
     arrows: false, // Deshabilitar flechas por defecto de react-slick (usaremos las personalizadas)
     dots: false,
     pauseOnHover: true,
@@ -48,7 +48,7 @@ const Carousel = () => {
 <div className="bg-black text-white px-6 [@media(min-width:681px)]:pl-16 [@media(min-width:681px)]:pr-8 flex flex-col [@media(min-width:681px)]:flex-row items-start [@media(min-width:681px)]:items-center justify-center gap-4 relative overflow-hidden h-auto [@media(min-width:681px)]:h-80 py-6 [@media(min-width:681px)]:py-0">
   {/* Contenido textual */}
   <div className="z-10 flex flex-col items-start text-left order-1">
-    <h2 className="text-3xl [@media(min-width:681px)]:text-4xl font-bold">Waumatch</h2>
+    <h2 className="text-3xl [@media(min-width:681px)]:text-4xl font-bold text-pink-400">Waumatch</h2>
     <p className="text-base [@media(min-width:681px)]:text-lg max-w-md mt-1">
       Un espacio donde las mascotas encuentran compañía para sus paseos.
     </p>

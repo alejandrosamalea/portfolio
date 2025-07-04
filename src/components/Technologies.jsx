@@ -56,12 +56,42 @@ const Technologies = () => {
     return {};
   };
 
+  const getDisplayName = (name) => {
+    const mapping = {
+      csharp: "C#",
+      dotnet8: ".NET 8",
+      javascript: "JavaScript",
+      html5: "HTML5",
+      css3: "CSS3",
+      mysql: "MySQL",
+      microsoftsqlserver: "SQL Server",
+      vscode: "VS Code",
+      visualstudio: "Visual Studio",
+      androidstudio: "Android Studio",
+      intellij: "IntelliJ",
+      firebase: "Firebase",
+      spring: "Spring Boot",
+      blazor: "Blazor",
+      kotlin: "Kotlin",
+      php: "PHP",
+      react: "React",
+      java: "Java",
+      git: "Git",
+      github: "GitHub",
+      docker: "Docker",
+      mongodb: "MongoDB",
+      angular: "Angular",
+      bootstrap: "Bootstrap",
+    };
+    return mapping[name] || name.charAt(0).toUpperCase() + name.slice(1);
+  };
+
   return (
     <section id="technologies" className="my-12 bg-black text-white py-12">
-      <h2 className="text-3xl font-bold text-center mb-8">Tecnologías</h2>
+      <h2 className="text-3xl font-bold text-center mb-8 text-pink-400">Tecnologías</h2>
       <div className="max-w-5xl mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          {sections.map((section, index) => (
+          {sections.map((section) => (
             <div
               key={section.title}
               className="relative bg-neutral-900 p-6 rounded-xl group overflow-hidden"
@@ -69,7 +99,9 @@ const Technologies = () => {
               <div className="absolute inset-0 rounded-xl border border-gray-700" />
               <div className="border-animator" />
               <div className="relative z-0">
-                <h3 className="text-2xl font-semibold text-pink-400 mb-4">{section.title}</h3>
+                <h3 className="text-2xl font-semibold text-pink-400 mb-4">
+                  {section.title}
+                </h3>
                 <div className="flex flex-wrap gap-4 justify-center">
                   {section.items.map((tech) => (
                     <div
@@ -77,13 +109,12 @@ const Technologies = () => {
                       className="flex flex-col items-center"
                     >
                       <div className="w-[80px] h-[80px] flex items-center justify-center transition-transform duration-300 hover:scale-110">
-                        {/* Añadido hover:scale-110 y transition-transform */}
                         <i
                           className={`${getIconClass(tech)} text-4xl colored`}
                           style={getIconStyle(tech)}
                         ></i>
                       </div>
-                      <span className="text-sm mt-2 text-center capitalize">{tech}</span>
+                      <span className="text-sm mt-2 text-center">{getDisplayName(tech)}</span>
                     </div>
                   ))}
                 </div>
