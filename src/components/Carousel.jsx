@@ -42,65 +42,127 @@ const Carousel = () => {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto overflow-hidden relative">
-      <div className="h-80 cursor-grab active:cursor-grabbing">
-        <Slider {...settings} ref={sliderRef}>
-<div className="bg-black text-white px-6 [@media(min-width:681px)]:pl-16 [@media(min-width:681px)]:pr-8 flex flex-col [@media(min-width:681px)]:flex-row items-start [@media(min-width:681px)]:items-center justify-center gap-4 relative overflow-hidden h-auto [@media(min-width:681px)]:h-80 py-6 [@media(min-width:681px)]:py-0">
-  {/* Contenido textual */}
-  <div className="z-10 flex flex-col items-start text-left order-1">
-    <h2 className="text-3xl [@media(min-width:681px)]:text-4xl font-bold text-pink-400">Waumatch</h2>
-    <p className="text-base [@media(min-width:681px)]:text-lg max-w-md mt-1">
-      Un espacio donde las mascotas encuentran compañía para sus paseos.
-    </p>
-    <button className="mt-3 px-5 [@media(min-width:681px)]:px-6 py-2 bg-white text-black rounded-full font-semibold hover:bg-gray-200 transition">
-      Ver proyecto
-    </button>
-  </div>
+    <section id="projects" className="my-12">
+      <h2 className="text-3xl font-bold text-center mb-8 text-pink-400">
+        Proyectos Personales
+      </h2>
+      <div className="w-full max-w-4xl mx-auto overflow-hidden relative">
+        <div className="h-80 cursor-grab active:cursor-grabbing">
+          <Slider {...settings} ref={sliderRef}>
 
-  {/* Imagen */}
-  <img
-    src="../static/img/FotoConPerro.png"
-    alt="Waumatch"
-    className="w-44 [@media(min-width:681px)]:w-auto h-40 [@media(min-width:681px)]:h-full object-contain transition-all duration-300 order-2 [@media(min-width:681px)]:order-none [@media(min-width:681px)]:absolute [@media(min-width:681px)]:right-10 [@media(min-width:681px)]:bottom-0"
-  />
-</div>
-          <div className="h-80 bg-green-500 flex items-center justify-center text-white text-3xl font-bold">
-            PROYECTOS
-          </div>
-          <div className="h-80 bg-blue-500 flex items-center justify-center text-white text-3xl font-bold">
-            CONTACTO
-          </div>
-          <div className="h-80 bg-yellow-500 flex items-center justify-center text-white text-3xl font-bold">
-            OTRO
-          </div>
-        </Slider>
-      </div>
+            {/* carousel 1 */}
+            <div className="bg-black text-white px-6 [@media(min-width:681px)]:pl-16 [@media(min-width:681px)]:pr-8 flex flex-col [@media(min-width:681px)]:flex-row items-start [@media(min-width:681px)]:items-center justify-center gap-4 relative overflow-hidden h-auto [@media(min-width:681px)]:h-80 py-6 [@media(min-width:681px)]:py-0">
+              {/* Contenido textual */}
+              <div className="z-10 flex flex-col items-start text-left order-1">
+                <h2 className="text-3xl [@media(min-width:681px)]:text-4xl font-bold">
+                  Waumatch
+                </h2>
+                <p className="text-base [@media(min-width:681px)]:text-lg max-w-md mt-1">
+                  Un espacio donde las mascotas encuentran compañía para sus
+                  paseos.
+                </p>
+                <button className="mt-3 px-5 [@media(min-width:681px)]:px-6 py-2 bg-white text-black rounded-full font-semibold hover:bg-gray-200 transition">
+                  Ver proyecto
+                </button>
+              </div>
 
-      {/* Flechas de navegación */}
-      <div className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 text-4xl text-white cursor-pointer">
-        <button onClick={goToPrev} className="p-2">
-          &lt;
-        </button>
-      </div>
-      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 text-4xl text-white cursor-pointer">
-        <button onClick={goToNext} className="p-2">
-          &gt;
-        </button>
-      </div>
+              {/* Imagen */}
+              <img
+                src="../static/img/FotoConPerro.png"
+                alt="Waumatch"
+                className="w-44 [@media(min-width:681px)]:w-auto h-40 [@media(min-width:681px)]:h-full object-contain transition-all duration-300 order-2 [@media(min-width:681px)]:order-none [@media(min-width:681px)]:absolute [@media(min-width:681px)]:right-10 [@media(min-width:681px)]:bottom-0"
+              />
+            </div>
 
-      {/* Indicadores de navegación */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
-        {[0, 1, 2, 3].map((i) => (
-          <div
-            key={i}
-            className={`h-1 w-12 rounded-full transition-all duration-300 cursor-pointer ${
-              current === i ? "w-12 bg-white" : "w-4 bg-gray-300"
-            }`}
-            onClick={() => changeSlide(i)}
-          />
-        ))}
+            {/* carousel 2 */}
+            <div className="bg-black text-white px-6 [@media(min-width:681px)]:pl-16 [@media(min-width:681px)]:pr-8 flex flex-col [@media(min-width:681px)]:flex-row items-start [@media(min-width:681px)]:items-center justify-center gap-4 relative overflow-hidden h-auto [@media(min-width:681px)]:h-80 py-6 [@media(min-width:681px)]:py-0">
+              {/* Contenido textual */}
+              <div className="z-10 flex flex-col items-start text-left order-1">
+                <h2 className="text-3xl [@media(min-width:681px)]:text-4xl font-bold">
+                  TFGPOKE
+                </h2>
+                <p className="text-base [@media(min-width:681px)]:text-lg max-w-md mt-1">
+                  Un pequeño juego de combate Pokémon desarrollado con Java,
+                  JavaScript, HTML y CSS.
+                </p>
+                <button className="mt-3 px-5 [@media(min-width:681px)]:px-6 py-2 bg-white text-black rounded-full font-semibold hover:bg-gray-200 transition">
+                  Ver proyecto
+                </button>
+              </div>
+
+              {/* Imagen */}
+              <img
+                src="../static/img/imagenPokemon.png"
+                alt="TFGPOKE"
+                className="w-44 [@media(min-width:681px)]:w-auto h-40 [@media(min-width:681px)]:h-full object-contain transition-all duration-300 order-2 [@media(min-width:681px)]:order-none [@media(min-width:681px)]:absolute [@media(min-width:681px)]:right-10 [@media(min-width:681px)]:bottom-0"
+              />
+            </div>
+
+           {/* carousel 3 */}
+
+            <div className="bg-black text-white px-6 [@media(min-width:681px)]:pl-16 [@media(min-width:681px)]:pr-8 flex flex-col [@media(min-width:681px)]:flex-row items-start [@media(min-width:681px)]:items-center justify-center gap-4 relative overflow-hidden h-auto [@media(min-width:681px)]:h-80 py-6 [@media(min-width:681px)]:py-0">
+              {/* Contenido textual */}
+              <div className="z-10 flex flex-col items-start text-left order-1">
+                <h2 className="text-3xl [@media(min-width:681px)]:text-4xl font-bold">
+                  Portfolio
+                </h2>
+                <p className="text-base [@media(min-width:681px)]:text-lg max-w-md mt-1">
+                  Este portfolio está construido con React, utilizando
+                  componentes reutilizables, diseño responsive y librerías
+                  modernas como Tailwind y React Slick.
+                </p>
+                <a
+                  href="https://github.com/alejandrosamalea/portfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 px-5 [@media(min-width:681px)]:px-6 py-2 bg-white text-black rounded-full font-semibold hover:bg-gray-200 transition"
+                >
+                  Ver en GitHub
+                </a>
+              </div>
+
+              {/* Imagen */}
+              <img
+                src="../static/img/imagenPortfolio.png"
+                alt="Portfolio Personal"
+                className="w-44 [@media(min-width:681px)]:w-auto h-40 [@media(min-width:681px)]:h-full object-contain transition-all duration-300 order-2 [@media(min-width:681px)]:order-none [@media(min-width:681px)]:absolute [@media(min-width:681px)]:right-10 [@media(min-width:681px)]:bottom-0"
+              />
+            </div>
+
+            {/* carousel 4 */}
+            {/* <div className="h-80 bg-yellow-500 flex items-center justify-center text-white text-3xl font-bold">
+              OTRO
+            </div> */}
+          
+          </Slider>
+        </div>
+
+        {/* Flechas de navegación */}
+        <div className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 text-4xl text-white cursor-pointer">
+          <button onClick={goToPrev} className="p-2">
+            &lt;
+          </button>
+        </div>
+        <div className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 text-4xl text-white cursor-pointer">
+          <button onClick={goToNext} className="p-2">
+            &gt;
+          </button>
+        </div>
+
+        {/* barras de abajo de el carousel*/}
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+          {[0, 1, 2].map((i) => (
+            <div
+              key={i}
+              className={`h-1 w-12 rounded-full transition-all duration-300 cursor-pointer ${
+                current === i ? "w-12 bg-white" : "w-4 bg-gray-300"
+              }`}
+              onClick={() => changeSlide(i)}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

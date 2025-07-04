@@ -12,11 +12,11 @@ const Technologies = () => {
     },
     {
       title: "🛢️ Bases de datos",
-      items: ["mysql", "microsoftsqlserver", "mongodb"],
+      items: ["mysql", "microsoftsqlserver", "mongodb", "firebase"],
     },
     {
       title: "🧰 Herramientas",
-      items: ["git", "github", "docker", "firebase", "intellij", "vscode", "visualstudio", "androidstudio"],
+      items: ["git", "github", "docker", "intellij", "vscode", "visualstudio", "androidstudio"],
     },
   ];
 
@@ -99,7 +99,7 @@ const Technologies = () => {
               <div className="absolute inset-0 rounded-xl border border-gray-700" />
               <div className="border-animator" />
               <div className="relative z-0">
-                <h3 className="text-2xl font-semibold text-pink-400 mb-4">
+                <h3 className="text-2xl font-semibold mb-4">
                   {section.title}
                 </h3>
                 <div className="flex flex-wrap gap-4 justify-center">

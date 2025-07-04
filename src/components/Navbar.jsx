@@ -8,6 +8,14 @@ export default function Navbar() {
         <li>
           <a href="#projects">Proyectos</a>
         </li>
+         <li>
+          <a href="#experience">Experiencia</a>
+        </li>
+        <li>
+          <a href="#technologies">Tecnologías</a>
+        </li>
+       
+        
         <li>
           <a href="#contact">Contacto</a>
         </li>
