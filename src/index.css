@@ -26,7 +26,7 @@ html, body, #root {
   height: 100%;
   background-color: #000000;
 }
-#projects {
+#projects , #experience , #technologies , #contact  ,#about {
   padding-top: 80px;  /* espacio para que no quede tapado */
   margin-top: -80px;  /* quita el espacio extra visual */
 }

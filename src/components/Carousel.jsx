@@ -68,7 +68,7 @@ const Carousel = () => {
 
               {/* Imagen */}
               <img
-                src="../static/img/FotoConPerro.png"
+                src="../static/img/FotoConPerro.webp"
                 alt="Waumatch"
                 className="w-44 [@media(min-width:681px)]:w-auto h-40 [@media(min-width:681px)]:h-full object-contain transition-all duration-300 order-2 [@media(min-width:681px)]:order-none [@media(min-width:681px)]:absolute [@media(min-width:681px)]:right-10 [@media(min-width:681px)]:bottom-0"
               />
@@ -92,7 +92,7 @@ const Carousel = () => {
 
               {/* Imagen */}
               <img
-                src="../static/img/imagenPokemon.png"
+                src="../static/img/fotoPokemon.webp"
                 alt="TFGPOKE"
                 className="w-44 [@media(min-width:681px)]:w-auto h-40 [@media(min-width:681px)]:h-full object-contain transition-all duration-300 order-2 [@media(min-width:681px)]:order-none [@media(min-width:681px)]:absolute [@media(min-width:681px)]:right-10 [@media(min-width:681px)]:bottom-0"
               />
@@ -123,7 +123,7 @@ const Carousel = () => {
 
               {/* Imagen */}
               <img
-                src="../static/img/imagenPortfolio.png"
+                src="../static/img/imagenPortfolio.webp"
                 alt="Portfolio Personal"
                 className="w-44 [@media(min-width:681px)]:w-auto h-40 [@media(min-width:681px)]:h-full object-contain transition-all duration-300 order-2 [@media(min-width:681px)]:order-none [@media(min-width:681px)]:absolute [@media(min-width:681px)]:right-10 [@media(min-width:681px)]:bottom-0"
               />

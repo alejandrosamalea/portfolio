@@ -9,7 +9,7 @@ export default function About() {
         {/* Imagen circular */}
         <div className="w-36 h-36 rounded-full overflow-hidden flex-shrink-0 mr-8 mb-6 md:mb-0">
           <img
-            src="../static/img/FotoPerfil.png"
+            src="../static/img/FotoPerfil.webp"
             alt="Alejandro Ibañez Samalea"
             className="object-cover w-full h-full"
           />
