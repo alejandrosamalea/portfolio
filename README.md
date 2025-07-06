@@ -58,7 +58,7 @@ Para crear una versión optimizada para publicar en un servidor:
 
 ## Contacto
 
-Puedes visitarme o copiar mi correo usando los siguientes enlaces:
+Puedes visitarme en linkedin o contactarme por correo:
 
 - [Visitar LinkedIn](https://www.linkedin.com/in/alejandro-ibañez-samalea-2b7a66228)
 - Correo: alejandro.ibanez.samalea@gmail.com
