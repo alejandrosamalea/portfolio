@@ -20,6 +20,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 html, body, #root {
   margin: 0;
   padding: 0;
@@ -58,3 +59,4 @@ body {
     0 0 64px rgba(255, 192, 222, 0.4);  
 }
  /**********************************************************/   
+   

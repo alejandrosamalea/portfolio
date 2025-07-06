@@ -88,42 +88,42 @@ const Technologies = () => {
 
   return (
     <section id="technologies" className="my-12 bg-black text-white py-12">
-      <h2 className="text-3xl font-bold text-center mb-8 text-pink-400">Tecnologías</h2>
-      <div className="max-w-5xl mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          {sections.map((section) => (
-            <div
-              key={section.title}
-              className="relative bg-neutral-900 p-6 rounded-xl group overflow-hidden"
-            >
-              <div className="absolute inset-0 rounded-xl border border-gray-700" />
-              <div className="border-animator" />
-              <div className="relative z-0">
-                <h3 className="text-2xl font-semibold mb-4">
-                  {section.title}
-                </h3>
-                <div className="flex flex-wrap gap-4 justify-center">
-                  {section.items.map((tech) => (
-                    <div
-                      key={tech}
-                      className="flex flex-col items-center"
-                    >
-                      <div className="w-[80px] h-[80px] flex items-center justify-center transition-transform duration-300 hover:scale-110">
-                        <i
-                          className={`${getIconClass(tech)} text-4xl colored`}
-                          style={getIconStyle(tech)}
-                        ></i>
-                      </div>
-                      <span className="text-sm mt-2 text-center">{getDisplayName(tech)}</span>
-                    </div>
-                  ))}
+  <h2 className="text-3xl font-bold text-center mb-8 text-pink-400">
+    Tecnologías
+  </h2>
+
+  <div className="w-full max-w-5xl mx-auto px-4 sm:px-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      {sections.map((section) => (
+        <div
+          key={section.title}
+          className="relative bg-neutral-900 p-6 rounded-xl group overflow-hidden"
+        >
+          <div className="absolute inset-0 rounded-xl border border-gray-700" />
+          <div className="border-animator" />
+          <div className="relative z-0">
+            <h3 className="text-2xl font-semibold mb-4 text-center">{section.title}</h3>
+            <div className="flex flex-wrap gap-4 justify-center">
+              {section.items.map((tech) => (
+                <div key={tech} className="flex flex-col items-center">
+                  <div className="w-[80px] h-[80px] flex items-center justify-center transition-transform duration-300 hover:scale-110">
+                    <i
+                      className={`${getIconClass(tech)} text-4xl colored`}
+                      style={getIconStyle(tech)}
+                    ></i>
+                  </div>
+                  <span className="text-sm mt-2 text-center">
+                    {getDisplayName(tech)}
+                  </span>
                 </div>
-              </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
+  </div>
+</section>
   );
 };
 

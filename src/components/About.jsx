@@ -21,17 +21,20 @@ export default function About() {
             Alejandro Ibañez Samalea
           </h1>
           <h3 className="font-extrabold text-2xl md:text-3xl mb-6">
-            Desarrollador web y multiplataforma
+            Desarrollador Web y Multiplataforma
           </h3>
 
+        <p className="text-lg mb-4">
+  Soy un desarrollador apasionado por la tecnología y especializado en el desarrollo backend con <strong>Java y Spring Boot</strong>. Trabajo en la construcción de aplicaciones sólidas y mantenibles utilizando herramientas como JPA/Hibernate y bases de datos como MySQL o MongoDB.
+</p>
           <p className="text-lg mb-4">
-            Soy un desarrollador especializado en <strong>.NET y Blazor</strong>, con experiencia en la creación de aplicaciones frontend y backend, utilizando C#, .NET 8 y Entity Framework Core para construir soluciones eficientes y escalables.
+            También tengo experiencia en el ecosistema <strong>.NET</strong>, incluyendo <strong>Blazor</strong>, C# y Entity Framework Core, lo que me permite desenvolverme en entornos multiplataforma y adaptarme fácilmente a distintos stacks tecnológicos.
           </p>
           <p className="text-lg mb-4">
-            Además, cuento con conocimientos sólidos en múltiples tecnologías modernas como Java, JavaScript, Kotlin, Spring Boot, MySQL, MongoDB y más, que me permiten adaptarme a diferentes proyectos y retos tecnológicos.
+            A lo largo de mi carrera he trabajado tanto en el frontend como en el backend, usando tecnologías como JavaScript, Kotlin, y frameworks modernos para construir soluciones completas y escalables.
           </p>
           <p className="text-lg">
-            Estoy comprometido con la mejora continua, el trabajo en equipo y la creación de experiencias digitales intuitivas y de alta calidad.
+            Me defino como una persona proactiva, orientada a la calidad del código y al trabajo en equipo, siempre en búsqueda de seguir aprendiendo y aportar valor en cada proyecto.
           </p>
         </div>
       </div>

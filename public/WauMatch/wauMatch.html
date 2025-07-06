@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Capturas de pantalla de la app WauMatch" />
+    <title>WauMatch - Pantallas</title>
+
+    <!-- Google Fonts & Devicon -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="../static/css/wauMatchs.css" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="pt-0 px-4 pb-10">
+
+    <!-- Navbar -->
+   <nav class="hidden md:flex bg-black text-white p-4 sticky top-0 z-10 items-center">
+  <div class="flex-shrink-0">
+    <a href="../index.html" class="navbar-links text-xl text-pink-400 font-semibold hover:text-white">Regresar</a>
+  </div>
+  <ul class="flex gap-6 justify-center flex-grow navbar-links text-xl">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#perfil">Perfil</a></li>
+    <li><a href="#resenas">Reseñas</a></li>
+    <li><a href="#chat">Chat</a></li>
+    <li><a href="#anuncios">Anuncios</a></li>
+    <li><a href="#acciones">Acciones</a></li>
+  </ul>
+</nav>
+
+    <header class="mb-12">
+      <h1 id="home" class="text-4xl font-bold section-title">Pantallas de WauMatch</h1>
+      <p class="text-gray-400 mt-2">Explora las distintas pantallas de la aplicación</p>
+    </header>
+
+    <main class="space-y-16 max-w-6xl mx-auto">
+
+      <!-- HomeScreen y FavoriteScreen -->
+      <section>
+        <h2 class="text-2xl font-semibold section-title text-center mb-6">Home y Favoritos</h2>
+        <div class="image-row">
+          <img src="../static/img/imgWauMatch/home.webp" alt="HomeScreen 1" class="screenshot" />
+          <img src="../static/img/imgWauMatch/favoritos.webp" alt="FavoriteScreen" class="screenshot" />
+        </div>
+      </section>
+
+      <!-- Perfil de usuario -->
+      <section id="perfil">
+        <h2 class="text-2xl font-semibold section-title text-center mb-6">Perfil de usuario</h2>
+        <div class="image-row">
+          <img src="../static/img/imgWauMatch/perfil1.webp" alt="Perfil 1" class="screenshot" />
+          <img src="../static/img/imgWauMatch/perfil2.webp" alt="Perfil 2" class="screenshot" />
+          <img src="../static/img/imgWauMatch/perfil3.webp" alt="Perfil 3" class="screenshot" />
+        </div>
+      </section>
+
+      <!-- Reseñas y lista de mascotas -->
+      <section id="resenas">
+        <h2 class="text-2xl font-semibold section-title text-center mb-6">Reseñas , lista de mascotas y mis anuncios</h2>
+        <div class="image-row">
+          <img src="../static/img/imgWauMatch/resenas.webp" alt="Reseña 1" class="screenshot" />
+          <img src="../static/img/imgWauMatch/listamascotas.webp" alt="Lista mascotas" class="screenshot" />
+          <img src="../static/img/imgWauMatch/misanuncios.webp" alt="Mis anuncios" class="screenshot" />
+        </div>
+      </section>
+
+      <!-- Chat y Chat Detallado -->
+      <section id="chat">
+        <h2 class="text-2xl font-semibold section-title text-center mb-6">Chat y Chat detallado</h2>
+        <div class="image-row">
+          <img src="../static/img/imgWauMatch/listaChats.webp" alt="Chat General" class="screenshot" />
+          <img src="../static/img/imgWauMatch/chatDetallado.webp" alt="Chat Detallado" class="screenshot" />
+        </div>
+      </section>
+
+      <!-- Creación Anuncios -->
+      <section id="anuncios">
+        <h2 class="text-2xl font-semibold section-title text-center mb-6">Creación de anuncios</h2>
+        <div class="image-row">
+          <img src="../static/img/imgWauMatch/crearAnuncio1.webp" alt="Nuevo anuncio 1" class="screenshot" />
+          <img src="../static/img/imgWauMatch/crarAnuncio2.webp" alt="Nuevo anuncio 2" class="screenshot" />
+        </div>
+      </section>
+    </main>
+
+    <!-- Acciones: GitHub y APK -->
+<section id="acciones" class="text-center mt-16 space-y-6">
+  <h3 class="text-2xl font-semibold section-title">Acciones</h3>
+  <div class="flex justify-center gap-8 mt-4">
+    <!-- Botón GitHub -->
+    <a href="https://github.com/tuusuario/tu-repo" target="_blank" class="action-link">
+      <i class="devicon-github-original text-3xl"></i>
+      <span>Ver en GitHub</span>
+    </a>
+
+    <!-- Botón Descargar APK -->
+    <a href="../static/apks/WauMatchapk.apk" download class="action-link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
+      </svg>
+      <span>Descargar APK</span>
+    </a>
+  </div>
+</section>
+
+    <footer class="text-sm mt-20">
+      <p>© 2025 Alejandro Ibañez Samalea</p>
+    </footer>
+  </body>
+</html>
