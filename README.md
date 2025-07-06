@@ -47,9 +47,6 @@ Este portfolio está desarrollado con **React**. Si quieres clonar el proyecto y
 5. Abre tu navegador y visita [http://localhost:3000](http://localhost:3000) para ver el portfolio.
 
 ---
-Abre tu navegador y visita http://localhost:3000 para ver el portfolio.
-
----
 
 ## Generar el build para producción
 
