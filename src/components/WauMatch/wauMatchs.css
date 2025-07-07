@@ -1,3 +1,5 @@
+/* src/components/WauMatch/wauMatchs.css */
+
 html {
   scroll-behavior: smooth;
 }
@@ -6,7 +8,6 @@ body {
   background-color: #000;
   color: white;
   font-family: 'Space Grotesk', sans-serif;
-  scroll-behavior: smooth;
 }
 
 #home,
@@ -15,9 +16,10 @@ body {
 #chat,
 #anuncios,
 #acciones {
-  padding-top: 80px;   /* para que no quede tapado por el navbar */
-  margin-top: -40px;   /* elimina espacio extra visual */
+  padding-top: 80px;
+  margin-top: -40px;
 }
+
 .section-title {
   color: #f472b6;
 }
@@ -38,10 +40,6 @@ body {
   padding: 0.5rem;
 }
 
-header, footer {
-  text-align: center;
-}
-
 .navbar-links a {
   color: #f472b6;
   font-weight: 600;
@@ -58,16 +56,11 @@ header, footer {
   align-items: center;
   gap: 0.5rem;
   color: white;
-  font-size: 1.125rem; 
+  font-size: 1.125rem;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
 .action-link:hover {
-  color: #f472b6; 
-}
-
-footer {
-  margin-top: 4rem;
-  color: #888;
+  color: #f472b6;
 }

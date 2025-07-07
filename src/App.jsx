@@ -1,26 +1,44 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import About from "./components/About";
-import Footer from "./components/Footer";
-import Contact from "./components/Contact";
-import Experience from "./components/Experience";
-import Carousel from "./components/Carousel";
-import Technologies from "./components/Technologies";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Navbar from "./components/Main/Navbar";
+import About from "./components/Main/About";
+import Footer from "./components/Main/Footer";
+import Contact from "./components/Main/Contact";
+import Experience from "./components/Main/Experience";
+import Carousel from "./components/Main/Carousel";
+import Technologies from "./components/Main/Technologies";
+import WauMatch from "./components/WauMatch/WauMatch";  
 
 function App() {
   return (
- <div className="bg-black text-white min-h-screen pb-12 w-full">
-    
-  <Navbar />
+    <Router>
+      <div className="bg-black text-white min-h-screen pb-12 w-full">
+       
 
- 
-  <About />
-  <Carousel />
-  <Experience />
-  <Technologies />
-  <Contact />
-  <Footer/>
-    </div>
+        <Routes>
+          {/* Página principal con todos los componentes */}
+          <Route
+            path="/"
+            element={
+              <>
+               <Navbar />
+                <About />
+                <Carousel />
+                <Experience />
+                <Technologies />
+                <Contact />
+              </>
+            }
+          />
+
+          {/* Página del proyecto Waumatch */}
+          <Route path="/projects/waumatch" element={<WauMatch />} />
+        </Routes>
+
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
