@@ -17,7 +17,7 @@ export default function Contact() {
       <div className="flex justify-center gap-8 text-white text-lg">
         {/* LinkedIn */}
         <a
-          href="https://www.linkedin.com/in/alejandro-ibañez-samalea-2b7a66228"
+          href="https://www.linkedin.com/in/alejandro-ibanez-samalea-2b7a66228"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center hover:text-pink-400 transition"

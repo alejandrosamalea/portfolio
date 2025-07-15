@@ -22,10 +22,14 @@ const WauMatch = () => {
         </ul>
       </nav>
 
-      <header className="mb-12 text-center">
-        <h1 id="home" className="text-4xl font-bold section-title">Pantallas de WauMatch</h1>
-        <p className="text-gray-400 mt-2">Explora las distintas pantallas de la aplicación</p>
-      </header>
+<header className="mb-12 text-center">
+  <h1 id="home" className="text-4xl font-bold section-title">WauMatch</h1>
+  <p className="text-white-400 mt-2 max-w-3xl mx-auto">
+    WauMatch es una aplicación para el cuidado de animales donde puedes gestionar tu perfil y tus mascotas. 
+    Publica y filtra anuncios para encontrar o ofrecer cuidados, comunícate con otros usuarios mediante el chat, 
+    revisa reseñas y administra tus propios anuncios. Una comunidad pensada para facilitar el cuidado responsable.
+  </p>
+</header>
 
       <main className="space-y-16 max-w-6xl mx-auto">
         {/* Secciones con imágenes */}
@@ -47,7 +51,7 @@ const WauMatch = () => {
           },
           {
             id: "chat",
-            title: "Chat y Chat detallado",
+            title: "Lista de chats y Chat detallado",
             images: ["listaChats.webp", "chatDetallado.webp"],
           },
           {
@@ -72,26 +76,28 @@ const WauMatch = () => {
         ))}
 
         {/* Acciones */}
-        <section id="acciones" className="text-center mt-16 space-y-6">
-          <h3 className="text-2xl font-semibold section-title">Acciones</h3>
-          <div className="flex justify-center gap-8 mt-4">
-            <a href="https://github.com/alejandrosamalea/WauMatch" target="_blank" rel="noopener noreferrer" className="action-link">
-              <i className="devicon-github-original text-3xl"></i>
-              <span>Ver en GitHub</span>
-            </a>
-            <a href="/static/apks/WauMatchapk.apk" download className="action-link">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
-              </svg>
-              <span>Descargar APK</span>
-            </a>
-          </div>
-        </section>
+       <section id="acciones" className="text-center mt-16 space-y-6">
+  <h3 className="text-2xl font-semibold section-title">Acciones</h3>
+  <div className="flex justify-center gap-8 mt-4">
+    <a href="https://github.com/alejandrosamalea/WauMatch" target="_blank" rel="noopener noreferrer" className="action-link">
+      <i className="devicon-github-original text-3xl"></i>
+      <span>Ver en GitHub</span>
+    </a>
+    <a href="/static/apks/WauMatchapk.apk" download className="action-link">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        style={{ height: "30px", width: "30px" }}
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
+      </svg>
+      <span>Descargar APK</span>
+    </a>
+  </div>
+</section>
       </main>
-
-      <footer className="text-sm mt-20 text-center text-gray-500">
-        <p>© 2025 Alejandro Ibañez Samalea</p>
-      </footer>
     </div>
   );
 };

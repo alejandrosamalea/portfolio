@@ -60,7 +60,7 @@ const Carousel = () => {
               <div className="z-10 flex flex-col items-start text-left order-1 pl-6 md:pl-0">
                 <h2 className="text-3xl md:text-4xl font-bold">Waumatch</h2>
                 <p className="text-base md:text-lg max-w-md mt-1">
-                  Un espacio donde las mascotas encuentran compañía para sus paseos.
+                  Una App para el cuidado de mascotas desarrollada en Kotlin y Firebase
                 </p>
                 <Link to="/projects/waumatch">
                   <button className="mt-3 px-5 md:px-6 py-2 bg-white text-black rounded-full font-semibold hover:bg-gray-200 transition">
@@ -82,9 +82,11 @@ const Carousel = () => {
                 <p className="text-base md:text-lg max-w-md mt-1">
                   Un pequeño juego de combate Pokémon desarrollado con Java, JavaScript, HTML y CSS.
                 </p>
-                <button className="mt-3 px-5 md:px-6 py-2 bg-white text-black rounded-full font-semibold hover:bg-gray-200 transition">
-                  Ver proyecto
-                </button>
+               <Link to="/projects/tfgpoke">
+                  <button className="mt-3 px-5 md:px-6 py-2 bg-white text-black rounded-full font-semibold hover:bg-gray-200 transition">
+                    Ver proyecto
+                  </button>
+                </Link>
               </div>
               <img
                 src="../static/img/fotoPokemon.webp"

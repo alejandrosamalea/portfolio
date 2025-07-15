@@ -8,21 +8,20 @@ import Contact from "./components/Main/Contact";
 import Experience from "./components/Main/Experience";
 import Carousel from "./components/Main/Carousel";
 import Technologies from "./components/Main/Technologies";
-import WauMatch from "./components/WauMatch/WauMatch";  
+
+import WauMatch from "./components/WauMatch/WauMatch";
+import TFGPoke from "./components/TFGPoke/TFGPoke"; // ✅ Import correcto
 
 function App() {
   return (
     <Router>
       <div className="bg-black text-white min-h-screen pb-12 w-full">
-       
-
         <Routes>
-          {/* Página principal con todos los componentes */}
           <Route
             path="/"
             element={
               <>
-               <Navbar />
+                <Navbar />
                 <About />
                 <Carousel />
                 <Experience />
@@ -31,9 +30,8 @@ function App() {
               </>
             }
           />
-
-          {/* Página del proyecto Waumatch */}
           <Route path="/projects/waumatch" element={<WauMatch />} />
+          <Route path="/projects/tfgpoke" element={<TFGPoke />} /> {/* ✅ Nueva ruta */}
         </Routes>
 
         <Footer />

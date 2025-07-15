@@ -64,3 +64,8 @@ body {
 .action-link:hover {
   color: #f472b6;
 }
+.action-link i,
+.action-link svg {
+  vertical-align: middle;
+  line-height: 1;
+}
