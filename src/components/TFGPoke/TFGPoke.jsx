@@ -82,13 +82,13 @@ const TFGPoke = () => {
               {images.map((img, idx) => (
                 <React.Fragment key={idx}>
                   <img
-                    src={`/static/img/imgTfgPoke/${img}`}
+                    src={`/static/img/imgTFGPoke/${img}`}
                     alt={`${title} ${idx + 1}`}
                     className="screenshot transition duration-200 hover:scale-105 cursor-pointer hidden md:inline-block"
-                    onClick={() => openModal(`/static/img/imgTfgPoke/${img}`)}
+                    onClick={() => openModal(`/static/img/imgTFGPoke/${img}`)}
                   />
                   <img
-                    src={`/static/img/imgTfgPoke/${img}`}
+                    src={`/static/img/imgTFGPoke/${img}`}
                     alt={`${title} ${idx + 1}`}
                     className="screenshot md:hidden"
                   />

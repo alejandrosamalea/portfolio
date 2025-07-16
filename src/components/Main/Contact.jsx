@@ -1,15 +1,4 @@
-import { useState } from "react";
-
 export default function Contact() {
-  const [copied, setCopied] = useState(false);
-  const email = "alejandro.ibanez.samalea@gmail.com";
-
-  const copyEmail = () => {
-    navigator.clipboard.writeText(email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-
   return (
     <section id="contact" className="my-12 text-center">
       <h2 className="text-2xl font-bold mb-6 text-pink-400">Contacto</h2>
@@ -37,20 +26,29 @@ export default function Contact() {
           <span className="mt-1 text-sm">Visitar GitHub</span>
         </a>
 
-        {/* Gmail */}
-        <button
-          onClick={copyEmail}
-          className="flex flex-col items-center hover:text-pink-400 transition relative"
+ {/* Descargar CV */}
+        <a
+          href="/cvAlejandroIbanez.pdf"
+          download
+          className="flex flex-col items-center hover:text-pink-400 transition"
         >
-          <i className="devicon-google-plain text-4xl"></i>
-          <span className="mt-1 text-sm">Copiar correo</span>
-
-          {copied && (
-            <span className="absolute -top-6 left-1/2 -translate-x-1/2 text-xs bg-gray-800 text-white px-2 py-1 rounded shadow">
-              ¡Copiado!
-            </span>
-          )}
-        </button>
+          {/* Icono tipo archivo */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-10 h-10"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 12h6m-6 4h6m2 4H7a2 2 0 01-2-2V6a2 2 0 012-2h7l5 5v11a2 2 0 01-2 2z"
+            />
+          </svg>
+          <span className="mt-1 text-sm">Descargar CV</span>
+        </a>
       </div>
     </section>
   );
