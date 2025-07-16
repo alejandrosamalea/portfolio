@@ -4,8 +4,7 @@
 
 ## Enlace a la página
 
-El enlace a la página estará disponible próximamente.  
-¡Mantente atento!
+[alejandroibanez.com](http://alejandroibanez.com)
 
 ---
 
